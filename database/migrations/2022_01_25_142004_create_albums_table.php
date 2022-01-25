@@ -20,6 +20,9 @@ class CreateAlbumsTable extends Migration
             $table->integer('sold');
             $table->string('record_company', 100);
             $table->string('genres', 60);
+            $table->date('publication_date');
+            $table->time('total_duration');
+            $table->integer('author_id');
             $table->timestamps();
         });
     }
